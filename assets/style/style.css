@@ -8,7 +8,7 @@
 header {
     background-color: #242526;
     height: 100%;
-    padding: 10px 0px;
+    padding: 9px 0px;
 }
 nav {
     display: flex;
@@ -86,7 +86,7 @@ nav {
     width: 120px;
     background-color: #0253f52d;
     border-radius: 30px;
-    margin-right: -4px;
+    margin-right: 2px;
 }
 .user-button img {
     border-radius: 100%;
@@ -97,4 +97,120 @@ nav {
 
 .user-button p {
     text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.fb-profile-area {
+background: rgba(228,178,56,1);
+background: -moz-linear-gradient(top, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%, rgba(36,37,38,1) 77%, rgba(36,37,38,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,178,56,1)), color-stop(66%, rgba(36,37,38,1)), color-stop(77%, rgba(36,37,38,1)), color-stop(100%, rgba(36,37,38,1)));
+background: -webkit-linear-gradient(top, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%, rgba(36,37,38,1) 77%, rgba(36,37,38,1) 100%);
+background: -o-linear-gradient(top, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%, rgba(36,37,38,1) 77%, rgba(36,37,38,1) 100%);
+background: -ms-linear-gradient(top, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%, rgba(36,37,38,1) 77%, rgba(36,37,38,1) 100%);
+background: linear-gradient(to bottom, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%, rgba(36,37,38,1) 77%, rgba(36,37,38,1) 100%);
+width: 100%;
+}
+.fb-cover {
+    background: url('../images/facebook-cover.jpg');
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.profile-photo-area {
+    border: 5px solid  #242526;
+    border-radius: 100%;
+    background-color: #242526;
+}
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #2d88ff;
+    border-radius: 100%;
+}
+.profile-photo img {
+    height: 160px;
+    border-radius: 100%;
+    padding: 5px;
+}
+.fb-cover-edit {
+    display: flex;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 7px;
+}
+
+.fb-cover-edit i{
+    margin-right: 5px;
+}
+
+.user-profile-area {
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+}
+.user-profile-area:hover {
+    opacity: 0.9;
+}
+.user-nav-content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.user-bio {
+font-size: 30px;
+font-weight: bold;
+color: #e4e6eb;
+display: flex;
+flex-direction: column;
+text-align:center;
+margin: 10px;
+}
+.user-bio a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #2d88ff;
+}
+.user-bio a:hover {
+    text-decoration: underline;
+}
+.user-nav-content nav {
+   border-top: 1px solid gray;
+}
+.user-nav-content nav a {
+    text-decoration: none;
+    color:#989a9e ;
+}
+.user-nav-content ul {
+    list-style: none;
+    display: flex;
+}
+.user-nav-content ul li {
+    padding: 10px;
+    margin: 10px;
+}
+.user-nav-content ul li span {
+   font-size: 13px;
+
+}
+.user-nav-content ul li:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 10px;
+    z-index: 2;
 }
