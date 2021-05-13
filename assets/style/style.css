@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #242526;
+    height: 100%;
+    padding: 10px 0px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.containerWidth {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.facebook-icon { /* LOGO DO FACEBOOK */
+    width: 40px;
+    height: 40px;
+}
+.facebook-box-icon { /*BOX DO ICONE DE LUPA E INPUT*/ 
+    display: flex;
+}
+.facebook-search i {
+    color:#717377;
+    margin-left: 20px;
+}
+.facebook-box-icon a {  /*DIV QUE ENGLOBA A LOGO DO SITE*/
+    margin-right: 10px;
+}
+
+.facebook-search {
+    background-color: #373839;
+    border-radius: 30px;
+    width: 290px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.facebook-search input { /*INPUT DO FACEBOOK*/
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+    outline: transparent;
+    margin-left: 10px;
+}
+.facebook-box-home {
+    display: flex;
+    align-items: center;
+}
+.facebook-box-home i{
+    color: #717377;
+    font-size: 22px;
+}
+
+.facebook-box-home a {
+    margin: 0px 40px;
+    text-decoration: none;
+}
+.facebook-box-msg {
+    display: flex;
+    align-items: center;
+}
+.facebook-box-msg a:nth-child(n + 2){ /*Selecionará todos os filhos do elemento após o segundo*/
+    font-size: 19px;
+    text-decoration: none;
+    color: #717377;
+    /* background-color: rgba(255, 255, 255, 0.075); */
+    border-radius: 100%;
+    margin: 10px;
+}
+.facebook-box-msg a {
+    text-decoration: none;
+    color:#3e79f0 ;
+}
+
+.user-button  {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 120px;
+    background-color: #0253f52d;
+    border-radius: 30px;
+    margin-right: -4px;
+}
+.user-button img {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.user-button p {
+    text-decoration: none;
+}
