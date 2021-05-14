@@ -59,8 +59,13 @@ nav {
 }
 
 .facebook-box-home a {
-    margin: 0px 40px;
+    padding: 0px 40px;
     text-decoration: none;
+}
+.facebook-box-home a:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+   padding: 10px 40px;
+   border-radius: 10px;
 }
 .facebook-box-msg {
     display: flex;
@@ -70,7 +75,6 @@ nav {
     font-size: 19px;
     text-decoration: none;
     color: #717377;
-    /* background-color: rgba(255, 255, 255, 0.075); */
     border-radius: 100%;
     margin: 10px;
 }
@@ -114,6 +118,7 @@ background: -ms-linear-gradient(top, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%
 background: linear-gradient(to bottom, rgba(228,178,56,1) 0%, rgba(36,37,38,1) 66%, rgba(36,37,38,1) 77%, rgba(36,37,38,1) 100%);
 width: 100%;
 }
+
 .fb-cover {
     background: url('../images/facebook-cover.jpg');
     height: 350px;
@@ -148,13 +153,19 @@ width: 100%;
     border-radius: 100%;
     padding: 5px;
 }
+.profile-photo img:hover {
+    filter: contrast(90%);
+}
+
 .fb-cover-edit {
     display: flex;
     padding: 10px;
     background-color: cornsilk;
     border-radius: 7px;
 }
-
+.fb-cover-edit:hover {
+    opacity: 0.9;
+}
 .fb-cover-edit i{
     margin-right: 5px;
 }
@@ -163,9 +174,7 @@ width: 100%;
     display: flex;
     justify-content: center;
     margin-top: -150px;
-}
-.user-profile-area:hover {
-    opacity: 0.9;
+
 }
 .user-nav-content {
     margin-top: 10px;
@@ -191,7 +200,10 @@ margin: 10px;
     text-decoration: underline;
 }
 .user-nav-content nav {
-   border-top: 1px solid gray;
+   border-top: 1px solid rgba(128, 128, 128, 0.301);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 .user-nav-content nav a {
     text-decoration: none;
@@ -207,10 +219,48 @@ margin: 10px;
 }
 .user-nav-content ul li span {
    font-size: 13px;
-
+}
+.user-nav-content ul li i {
+    color: gray;
 }
 .user-nav-content ul li:hover {
     background-color: rgba(128, 128, 128, 0.15);
     border-radius: 10px;
     z-index: 2;
+}
+.create-story-box {
+    display: flex;
+    margin: 5px
+}
+.create-story {
+    display: flex;
+    padding: 10px  15px;
+    background-color: #2d88ff;
+    color: honeydew;
+    border-radius: 10px; 
+    margin-right: 5px;
+}
+.create-story i {
+    margin-right: 7px;
+}
+.edit-profile-btn  {
+    color: honeydew;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.15);
+    margin-right: 5px;
+}
+.edit-profile-btn i {
+    margin-right: 5px;
+}
+.general-btn  {
+    color: honeydew;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.15);
+    margin-right: 5px;
 }
