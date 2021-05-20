@@ -2,9 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+main {
+    background-color: #18191a;
+}
 header {
     background-color: #242526;
     height: 100%;
@@ -263,4 +265,263 @@ margin: 10px;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.15);
     margin-right: 5px;
+}
+
+.container-grid {
+    padding-top: 15px;
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    grid-template-columns: 360px 500px;
+    grid-template-areas: 
+    "presentation post"
+    "presentation publications"
+    "presentation ."
+    "photos .";
+}
+
+/********************SESSÃO DO CONTAINER DE APRESENTAÇÃO**************************/
+
+.presentation-container {
+    grid-area: presentation;
+    background-color: #242526;
+    padding: 15px;
+    color: honeydew;
+    border-radius: 10px;
+}
+
+.presentation-container ul {
+    list-style: none;
+}
+
+.presentation-container ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.presentation-container ul li i {
+    margin-right: 15px;
+}
+.presentation-container ul li a {
+    color: #2d88ff;
+    text-decoration: none;
+}
+
+.presentation-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.presentation-buttons button {
+    background-color: #3a3b3c;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: honeydew;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.presentation-buttons button:hover {
+    filter: brightness(120%);
+}
+
+/*************** SESSÃO DE POSTAGEM ************************/
+
+.post-container {
+    grid-area: post;
+    background-color: #242526;
+    padding: 15px;
+    color: honeydew;
+    border-radius: 10px;    
+}
+
+.post-container img {
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.post-container img:hover {
+    filter: contrast(85%);
+}
+.post-container .what-u-thinking-box {
+    display:flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.301);
+}
+.what-u-thinking-box input{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #3a3b3c;
+    border: none;
+    padding: 10px;
+    color: gray;
+    font-weight:400;
+}
+
+.post-options-box ul {
+    display: flex;
+    justify-content: center;
+}
+.post-options-box ul li {
+    list-style: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+.post-options-box ul li:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 10px;
+}
+.post-options-box ul li i {
+    margin-right: 5px;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: rgb(59, 105, 255);
+}
+
+.lightblue {
+    color: rgb(54, 226, 248);
+}
+
+/**************** SESSÃO DOS PUBLICAÇÕES ****************/
+.publications-container {
+    grid-area: publications;
+    background-color: #242526;
+    padding: 15px;
+    color: honeydew;
+    border-radius: 10px;
+}
+.publications-container .publications-config-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3a3b3c;
+    padding-bottom: 10px;
+}
+
+.publications-container .publications-config-box .filters-btn {
+    display: flex;
+    align-items: center;
+}
+.filters-btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3a3b3c;
+    margin-right: 10px;
+}
+.filters-btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3a3b3c;
+}
+.filters-btn-1:hover, .filters-btn-2:hover {
+    filter: brightness(120%);
+}
+.publications-container .publications-config-box .filters-btn p:nth-child(2){
+margin-right: 10px;
+}
+.publications-container .publications-config-box .filters-btn i {
+    margin-right: 7px;
+}
+
+.type-of-view-box {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.type-of-view-box .list-view {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #2d88ff;
+    color: #2d88ff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.type-of-view-box .grid-view {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.type-of-view-box .grid-view:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+}
+
+.type-of-view-box .list-view i{
+    margin: 7px;
+}
+.type-of-view-box .grid-view i {
+    margin-right: 7px;
+}
+
+/************ SESSÃO DE FOTOS **************/
+
+.photos-container {
+    grid-area: photos;
+    background-color: #242526;
+    padding: 15px;
+    color: honeydew;
+    border-radius: 10px;
+}
+
+.photos-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+.photos-title h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.photos-title p {
+    color: #2d88ff;
+    padding: 5px 20px;
+}
+.photos-title p:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-photos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap:5px;
+    justify-content: center;
+    /* border: 1px solid green; */
+    padding: 0px 15px;
+}
+.grid-photos-container img:first-child {
+    border-radius: 6px 0px 0px 0px;
+}
+.grid-photos-container img:nth-child(3) {
+    border-radius: 0px 6px 0px 0px;
+}
+.grid-photos-container img:nth-child(7) {
+    border-radius: 0px 0px 0px 6px;
+}
+.grid-photos-container img:nth-child(9) {
+    border-radius: 0px 0px 6px 0px;
+}
+.grid-photos-container img {
+    height: 100px;
+    width: 100px;
+}
+.grid-photos-container img:hover {
+    filter: contrast(85%);
+    cursor: pointer;
 }
