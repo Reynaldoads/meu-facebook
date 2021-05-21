@@ -271,13 +271,13 @@ width: 100%;
     display: grid;
     gap: 15px;
     justify-content: center;
-    grid-template-columns: 360px 500px;
-    grid-template-areas: 
+     grid-template-areas: 
     "presentation post"
     "presentation publications"
     "presentation ."
-    "photos ."
-    "friends .";
+    "photos ."    
+    "friends ."
+    ;
 }
 
 /********************SESSÃO DO CONTAINER DE APRESENTAÇÃO**************************/
@@ -393,7 +393,7 @@ width: 100%;
 .publications-container {
     grid-area: publications;
     background-color: #242526;
-    padding: 15px;
+    padding: 15px 15px 3px 15px;
     color: honeydew;
     border-radius: 10px;
 }
@@ -539,13 +539,9 @@ margin-right: 10px;
     align-items: baseline;
     padding-bottom: 15px;
 }
-
-.friends-container {
-
-}
-
 .friends-grid-container {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 100px);
     gap: 10px;
 }
@@ -561,9 +557,6 @@ margin-right: 10px;
     cursor: pointer;
 }
 
-.photo-box {
- 
-}
 
 .photo-box img {
    width: 100%;
