@@ -176,7 +176,6 @@ width: 100%;
     display: flex;
     justify-content: center;
     margin-top: -150px;
-
 }
 .user-nav-content {
     margin-top: 10px;
@@ -185,13 +184,13 @@ width: 100%;
     flex-direction: column;
 }
 .user-bio {
-font-size: 30px;
-font-weight: bold;
-color: #e4e6eb;
-display: flex;
-flex-direction: column;
-text-align:center;
-margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e4e6eb;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    margin: 10px;
 }
 .user-bio a {
     font-size: 16px;
@@ -277,7 +276,8 @@ margin: 10px;
     "presentation post"
     "presentation publications"
     "presentation ."
-    "photos .";
+    "photos ."
+    "friends .";
 }
 
 /********************SESSÃO DO CONTAINER DE APRESENTAÇÃO**************************/
@@ -481,7 +481,6 @@ margin-right: 10px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    /* border: 1px solid red; */
 }
 .photos-title h2:hover {
     text-decoration: underline;
@@ -521,7 +520,58 @@ margin-right: 10px;
     height: 100px;
     width: 100px;
 }
-.grid-photos-container img:hover {
+.grid-photos-container img:hover, .friends-grid-container img:hover {
     filter: contrast(85%);
     cursor: pointer;
+}
+
+/***************SESSÃO DOS MAIS QUE AMIGOS, FRIENDS ***********/
+.friends-container {
+    grid-area: friends;
+    background-color: #242526;
+    padding: 15px;
+    color: honeydew;
+    border-radius: 10px;
+}
+.friends-title {
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 15px;
+}
+
+.friends-container {
+
+}
+
+.friends-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+.see-all-friends {
+    color: #2d88ff;
+    padding: 5px 20px;
+}
+.see-all-friends:hover {
+    color: #2d88ff;
+    padding: 5px 20px;
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.photo-box {
+ 
+}
+
+.photo-box img {
+   width: 100%;
+   height: 100px;
+   border-radius: 10px;
+}
+.photo-box p {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
 }
