@@ -9,30 +9,30 @@ main {
 }
 header {
     background-color: #242526;
-    height: 100%;
-    padding: 9px 0px;
+    padding: 10px 0px;
+    /* width: 100%; */
 }
 nav {
     display: flex;
     justify-content: space-between;
 }
 .containerWidth {
-    max-width: 1200px;
+    width: 99%;
     margin: 0 auto;
 }
 
-.facebook-icon { /* LOGO DO FACEBOOK */
+.facebook-icon { 
     width: 40px;
     height: 40px;
 }
-.facebook-box-icon { /*BOX DO ICONE DE LUPA E INPUT*/ 
+.facebook-box-icon { 
     display: flex;
 }
 .facebook-search i {
     color:#717377;
     margin-left: 20px;
 }
-.facebook-box-icon a {  /*DIV QUE ENGLOBA A LOGO DO SITE*/
+.facebook-box-icon a {  
     margin-right: 10px;
 }
 
@@ -44,7 +44,7 @@ nav {
     display: flex;
     align-items: center;
 }
-.facebook-search input { /*INPUT DO FACEBOOK*/
+.facebook-search input { 
     border: none;
     color: #ffffff;
     background-color: transparent;
@@ -73,7 +73,7 @@ nav {
     display: flex;
     align-items: center;
 }
-.facebook-box-msg a:nth-child(n + 2){ /*Selecionará todos os filhos do elemento após o segundo*/
+.facebook-box-msg a:nth-child(n + 2){ 
     font-size: 19px;
     text-decoration: none;
     color: #717377;
@@ -143,7 +143,25 @@ width: 100%;
     border: 5px solid  #242526;
     border-radius: 100%;
     background-color: #242526;
+    position: relative;
 }
+.camera-icon {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    background-color: #3a3b3c;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.profile-photo-area i {
+    font-size: 18px;
+}
+.camera-icon:hover {
+    filter: brightness(120%);
+}
+
 .profile-photo {
     display: flex;
     justify-content: center;
@@ -164,6 +182,7 @@ width: 100%;
     padding: 10px;
     background-color: cornsilk;
     border-radius: 7px;
+    cursor: pointer;
 }
 .fb-cover-edit:hover {
     opacity: 0.9;
@@ -231,7 +250,14 @@ width: 100%;
 }
 .create-story-box {
     display: flex;
+    align-items: center;
     margin: 5px
+}
+.create-story, .edit-profile-btn, .general-btn {
+    cursor: pointer;
+}
+.create-story:hover, .edit-profile-btn:hover, .general-btn:hover {
+    filter: brightness(120%);
 }
 .create-story {
     display: flex;
@@ -250,7 +276,7 @@ width: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.15);
+    background-color: #3a3b3c;
     margin-right: 5px;
 }
 .edit-profile-btn i {
@@ -261,13 +287,13 @@ width: 100%;
     padding: 10px 15px;
     border-radius: 10px;
     display: flex;
+    font-size:21.3px;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.15);
-    margin-right: 5px;
+    background-color: #3a3b3c;
 }
 
 .container-grid {
-    padding-top: 15px;
+    padding: 15px 15px;
     display: grid;
     gap: 15px;
     justify-content: center;
@@ -278,6 +304,7 @@ width: 100%;
     "photos vaccine "    
     "friends vaccine "
     ;
+
 }
 
 /********************SESSÃO DO CONTAINER DE APRESENTAÇÃO**************************/
@@ -314,7 +341,7 @@ width: 100%;
 .presentation-buttons button {
     background-color: #3a3b3c;
     border-radius: 7px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
     color: honeydew;
     font-weight: bold;
@@ -370,6 +397,7 @@ width: 100%;
     align-items: center;
     padding: 10px;
     margin-top: 5px;
+    cursor: pointer;
 }
 .post-options-box ul li:hover {
     background-color: rgba(128, 128, 128, 0.15);
@@ -416,6 +444,7 @@ width: 100%;
     border-radius: 10px;
     background-color: #3a3b3c;
     margin-right: 10px;
+    cursor: pointer;
 }
 .filters-btn-2 {
     display: flex;
@@ -424,6 +453,7 @@ width: 100%;
     padding: 10px;
     border-radius: 10px;
     background-color: #3a3b3c;
+    cursor: pointer;
 }
 .filters-btn-1:hover, .filters-btn-2:hover {
     filter: brightness(120%);
@@ -454,6 +484,7 @@ margin-right: 10px;
     align-items: center;
     border-radius: 10px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 .type-of-view-box .grid-view:hover {
     background-color: rgba(128, 128, 128, 0.15);
@@ -498,11 +529,9 @@ margin-right: 10px;
 
 .grid-photos-container {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr);
     gap:5px;
     justify-content: center;
-    /* border: 1px solid green; */
-    padding: 0px 15px;
 }
 .grid-photos-container img:first-child {
     border-radius: 6px 0px 0px 0px;
@@ -517,8 +546,8 @@ margin-right: 10px;
     border-radius: 0px 0px 6px 0px;
 }
 .grid-photos-container img {
-    height: 100px;
-    width: 100px;
+    width: 100%;
+    height:100%;
 }
 .grid-photos-container img:hover, .friends-grid-container img:hover {
     filter: contrast(85%);
@@ -541,35 +570,36 @@ margin-right: 10px;
 }
 .friends-grid-container {
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 100px);
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
 }
 .see-all-friends {
     color: #2d88ff;
+    border-radius: 5px;
+    cursor: pointer;
     padding: 5px 20px;
 }
 .see-all-friends:hover {
-    color: #2d88ff;
-    padding: 5px 20px;
     background-color: rgba(128, 128, 128, 0.15);
-    border-radius: 5px;
-    cursor: pointer;
 }
-
-
+.photo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .photo-box img {
    width: 100%;
-   height: 100px;
-   border-radius: 10px;
+   height: 100%;
+   border-radius: 10px;  
 }
 .photo-box p {
+    margin-top: 5px;
     font-size: 13px;
     font-weight: 500;
     text-align: center;
 }
 
-/*****************SESSÃO DE POSTAGEM DA MARVEL***********************/
+/*****************SESSÃO DE POSTAGEM DA VACINA***********************/
 .vaccine-post-container {
     grid-area: vaccine;
     border-radius: 10px;
@@ -682,7 +712,6 @@ margin-right: 10px;
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
-
 }
 .input-box {
     display: flex;
@@ -692,6 +721,7 @@ margin-right: 10px;
     color: white;
     padding: 2px 10px;
     flex: 1;
+    margin-bottom: 10px;
 }
 .input-box input[type="text"] {
     padding-left: 5px;
@@ -708,11 +738,7 @@ margin-right: 10px;
     align-items: center;
     justify-content: center;
 }
-.figure-box i {
-    /* margin-right: 5px; */
-    /* padding: 0 5px; */
-    /* border-radius: 100%; */
-}
+
 .icon-div {
     padding: 10px;
     align-items: center;
@@ -727,11 +753,19 @@ margin-right: 10px;
     background-color: rgba(189, 189, 189, 0.233);
     cursor: pointer;
 }
-@media only screen and (min-width: 1440px) {
-      .containerWidth {
-        max-width: 1440px;
-        margin: 0 auto;
-      }
-  }
-
-
+@media (min-width: 1024px) {
+    .containerWidth {
+       max-width: 95%;
+    }
+    .facebook-box-home {
+        display: none;
+    }
+}
+ @media (min-width: 1368px) {
+    .containerWidth {
+        max-width: 99%;
+    }
+    .facebook-box-home {
+        display: flex;
+    }
+}
