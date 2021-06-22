@@ -17,7 +17,7 @@ nav {
     justify-content: space-between;
 }
 .containerWidth {
-    max-width: 1550px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -274,9 +274,9 @@ width: 100%;
      grid-template-areas: 
     "presentation post"
     "presentation publications"
-    "presentation ."
-    "photos ."    
-    "friends ."
+    "presentation vaccine"
+    "photos vaccine "    
+    "friends vaccine "
     ;
 }
 
@@ -568,3 +568,170 @@ margin-right: 10px;
     font-weight: 500;
     text-align: center;
 }
+
+/*****************SESSÃO DE POSTAGEM DA MARVEL***********************/
+.vaccine-post-container {
+    grid-area: vaccine;
+    border-radius: 10px;
+    background-color: #242526;
+    color: honeydew;
+}
+.vaccine-header {
+    padding: 15px;
+}
+.vaccine-header i{
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+}
+
+.img-desc-box {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.img-desc-box-2 {
+    display: flex;
+}
+.img-desc-box img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.astrazeneca-img {
+    max-width: 500px;
+}
+.vaccine-footer {
+    max-width: 500px;
+    padding: 0px 10px;
+}
+.fiocruz-container {
+    padding: 15px;
+    max-width: 500px;
+    border-left: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    border-right: 1px solid antiquewhite;
+    border-radius: 0px 0px 12px 12px;
+    /* margin: 10px; */
+}
+.fiocruz-container p:nth-child(2) {
+    margin-bottom: 5px;
+}
+.fiocruz-container i {
+    color: #2d88ff;
+}
+.fa-globe-americas:before {
+    color: gray;
+}
+.fiocruz-container a {
+ color: #2d88ff;
+ text-decoration: none;
+}
+.fiocruz-container a:hover {
+    text-decoration: underline;
+}
+.like-box {
+    display: flex;
+    margin-top: 10px;
+}
+.like-box img {
+    margin-right: 5px;
+}
+.like-box p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.like-box-content {
+    padding: 5px;
+}
+.comment-share-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #989a9e;
+    border-bottom: 1px solid #989a9e;
+   padding: 3px 0px;
+    margin-top: 15px;
+}
+.likeBx, .commentBx, .shareBx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-right: 3px;
+    flex: 1;
+}
+.likeBx:hover, .commentBx:hover, .shareBx:hover  {
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.likeBx i, .commentBx i, .shareBx i {
+    margin-right: 10px;
+}
+.write-comment-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.write-comment-box img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(192, 190, 190, 0.185);
+    border-radius: 30px;
+    color: white;
+    padding: 2px 10px;
+    flex: 1;
+}
+.input-box input[type="text"] {
+    padding-left: 5px;
+    border: none;
+    background-color: transparent;
+    flex: 1;
+}
+.input-box input[type="text"]::placeholder {
+    color: white;
+    font-size: 15px;
+}
+.figure-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.figure-box i {
+    /* margin-right: 5px; */
+    /* padding: 0 5px; */
+    /* border-radius: 100%; */
+}
+.icon-div {
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 5px;
+}
+.icon-div:last-child {
+    margin-right: 0px;
+}
+.icon-div:hover {
+    border-radius: 100%;
+    background-color: rgba(189, 189, 189, 0.233);
+    cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
+      .containerWidth {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+  }
+
+
